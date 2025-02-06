@@ -12,7 +12,7 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 
 <!-- vscode-markdown-toc -->
 * [Table of Contents](#TableofContents)
-* [Step 1: Fork the repository (optional)](#Step1Forktherepositoryoptional)
+* [Step 1: Fork the repository (optional)](#Step1:Forktherepositoryoptional)
 * [Step 2: Clone your repository to Visual Studio Code](#Step2:CloneyourrepositorytoVisualStudioCode)
 * [Step 3: Edit your code](#Step3:Edityourcode)
 * [Step 4: Run your code](#Step4:Runyourcode)
@@ -40,7 +40,7 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 <!-- /vscode-markdown-toc -->
 
 
-## <a name='Step1Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
+## <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
 Forking a repository makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
 
 If you're using a repository (or "repo") provided to you from GitHub Classroom, you can **skip this step**.
