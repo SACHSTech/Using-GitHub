@@ -25,13 +25,25 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 		* [Example: Work in Progress](#Example:WorkinProgress)
 		* [Example: Work in Progress - Informative](#Example:WorkinProgress-Informative)
 * [Terminology of GitHub](#TerminologyofGitHub)
-	* [Repositories](#Repositories)
+	* [Repository](#Repository)
 	* [Cloning](#Cloning)
-	* [Committing and pushing](#Committingandpushing)
+	* [Commit](#Commit)
+	* [Staging](#Staging)
+	* [Push](#Push)
+	* [Pull](#Pull)
+	* [Sync](#Sync)
 	* [Branches](#Branches)
 	* [Forks](#Forks)
-	* [Pull requests](#Pullrequests)
-	* [Issues](#Issues)
+	* [Pull Request](#PullRequest)
+* [GitHub + VS Code Workflow](#GitHubVSCodeWorkflow)
+	* [Pull the Latest Changes](#PulltheLatestChanges)
+	* [Merge Conflicts (If Any)](#MergeConflictsIfAny)
+	* [Edit Your Code](#EditYourCode)
+	* [Stage Changes](#StageChanges)
+	* [Write a Clear Commit Message](#WriteaClearCommitMessage)
+	* [Commit Changes](#CommitChanges)
+	* [Push to GitHub](#PushtoGitHub)
+	* [Best Practices](#BestPractices)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -203,49 +215,49 @@ You can use branches on GitHub to isolate work that you do not want merged into 
 ### <a name='Forks'></a>Forks
 A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-### <a name='Pullrequests'></a>Pull Request
+### <a name='PullRequest'></a>Pull Request
 When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
 
 
 <br><br>
 
-## <a name='GitHub + VS Code Workflow'></a>GitHub + VS Code Workflow
+## <a name='GitHubVSCodeWorkflow'></a>GitHub + VS Code Workflow
 When working with GitHub in an IDE like VS Code, it is best to follow this structured workflow every session.
 
-### Pull the Latest Changes
+### <a name='PulltheLatestChanges'></a>Pull the Latest Changes
 Before making any edits, pull the latest changes from the remote repository to ensure your local copy is up to date.
 
 In VS Code, use the Source Control panel or run `git pull` in the terminal.
 
-### Merge Conflicts (If Any)
+### <a name='MergeConflictsIfAny'></a>Merge Conflicts (If Any)
 If there are conflicts between your local changes and the remote repository, resolve them before proceeding.
 
 VS Code provides an interactive merge tool to help with conflict resolution.
 
-### Edit Your Code
+### <a name='EditYourCode'></a>Edit Your Code
 Make the necessary updates or additions to your files. Regularly save your work to prevent losing progress.
 
-### Stage Changes
+### <a name='StageChanges'></a>Stage Changes
 In VS Code, modified files are automatically staged when committing through the UI.
 
 If using the terminal, manually stage specific changes using `git add <filename>` or `git add .` to stage all changes.
 
-### Write a Clear Commit Message
+### <a name='WriteaClearCommitMessage'></a>Write a Clear Commit Message
 Describe your changes concisely and meaningfully (e.g., "*Fixed bug in login authentication*" or "*Added new user profile feature*").
 
 Avoid vague messages like "*Updated files*" or "*Fixed stuff*".
 
-### Commit Changes
+### <a name='CommitChanges'></a>Commit Changes
 In VS Code, click the commit button in the Source Control panel or use `git commit -m "Your commit message"` in the terminal.
 
 A commit saves your staged changes locally, but they are not yet uploaded to GitHub.
 
-### Push to GitHub
+### <a name='PushtoGitHub'></a>Push to GitHub
 After committing, push your changes to the remote repository using the push button in VS Code or `git push` in the terminal.
 
 This makes your updates available to teammates and ensures your work is backed up.
 
-### Best Practices
+### <a name='BestPractices'></a>Best Practices
 * Always pull before starting work to avoid conflicts.
 * Write descriptive commit messages to explain your changes.
 * Commit frequently to track progress and avoid large, confusing commits.
