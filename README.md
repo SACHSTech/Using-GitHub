@@ -12,13 +12,14 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 
 <!-- vscode-markdown-toc -->
 * [Table of Contents](#TableofContents)
-* [Step 1: Fork the repository (optional)](#Step1:Forktherepositoryoptional)
-* [Step 2: Clone your repository to Visual Studio Code](#Step2:CloneyourrepositorytoVisualStudioCode)
-* [Step 3: Edit your code](#Step3:Edityourcode)
-* [Step 4: Run your code](#Step4:Runyourcode)
-* [Step 5: Commit and sync your changes to GitHub](#Step5:CommitandsyncyourchangestoGitHub)
-	* [First Commit? How to fix the GitHub configuration error](#FirstCommitHowtofixtheGitHubconfigurationerror)
-* [Step 6: Verify update on GitHub (optional)](#Step6:VerifyupdateonGitHuboptional)
+* [Setup a New Repository with Visual Studio Code](#SetupaNewRepositorywithVisualStudioCode)
+	* [Step 1: Fork the repository (optional)](#Step1:Forktherepositoryoptional)
+	* [Step 2: Clone your repository to Visual Studio Code](#Step2:CloneyourrepositorytoVisualStudioCode)
+	* [Step 3: Edit your code](#Step3:Edityourcode)
+	* [Step 4: Run your code](#Step4:Runyourcode)
+	* [Step 5: Commit and sync your changes to GitHub](#Step5:CommitandsyncyourchangestoGitHub)
+		* [First Commit? How to fix the GitHub configuration error](#FirstCommitHowtofixtheGitHubconfigurationerror)
+	* [Step 6: Verify update on GitHub (optional)](#Step6:VerifyupdateonGitHuboptional)
 * [Writing Meaningful Commit Messages](#WritingMeaningfulCommitMessages)
 	* [Examples of Commit Messages](#ExamplesofCommitMessages)
 		* [Example: Completion](#Example:Completion)
@@ -35,15 +36,14 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 	* [Branches](#Branches)
 	* [Forks](#Forks)
 	* [Pull Request](#PullRequest)
-* [GitHub + VS Code Workflow](#GitHubVSCodeWorkflow)
-	* [Pull the Latest Changes](#PulltheLatestChanges)
-	* [Merge Conflicts (If Any)](#MergeConflictsIfAny)
-	* [Edit Your Code](#EditYourCode)
-	* [Stage Changes](#StageChanges)
-	* [Write a Clear Commit Message](#WriteaClearCommitMessage)
-	* [Commit Changes](#CommitChanges)
-	* [Push to GitHub](#PushtoGitHub)
-	* [Best Practices](#BestPractices)
+* [Review: Your Daily Workflow](#Review:YourDailyWorkflow)
+	* [Step 1. Pull the Latest Changes](#Step1.PulltheLatestChanges)
+	* [Step 2. Merge Conflicts (If Any)](#Step2.MergeConflictsIfAny)
+	* [Step 3. Edit Your Code](#Step3.EditYourCode)
+	* [Step 4. Stage Changes](#Step4.StageChanges)
+	* [Step 5. Write a Clear Commit Message](#Step5.WriteaClearCommitMessage)
+	* [Step 6. Commit Changes](#Step6.CommitChanges)
+	* [Step 7. Push to GitHub](#Step7.PushtoGitHub)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -51,15 +51,16 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
+## <a name='SetupaNewRepositorywithVisualStudioCode'></a>Setup a New Repository with Visual Studio Code
 
-## <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
+### <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
 Forking a repository makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
 
 If you're using a repository (or "repo") provided to you from GitHub Classroom, you can **skip this step**.
 
 ![forking](images/01.gif)
 
-## <a name='Step2:CloneyourrepositorytoVisualStudioCode'></a>Step 2: Clone your repository to Visual Studio Code
+### <a name='Step2:CloneyourrepositorytoVisualStudioCode'></a>Step 2: Clone your repository to Visual Studio Code
 Cloning your repo to Visual Studio Code creates a local, offline copy on your machine. To do this, follow these steps:
 
 1. From the GitHub page for the repo, copy the URL for your fork to the clipboard:
@@ -74,19 +75,19 @@ Cloning your repo to Visual Studio Code creates a local, offline copy on your ma
 
 ![vs_code_cloning](images/03.gif)
 
-## <a name='Step3:Edityourcode'></a>Step 3: Edit your code
+### <a name='Step3:Edityourcode'></a>Step 3: Edit your code
 The Explorer sidebar on the left shows all of the files in the current repo. Begin editing your code by opening the appropriate file in the code editor:
 
 ![vs_code_editing](images/04.gif)
 
-## <a name='Step4:Runyourcode'></a>Step 4: Run your code
+### <a name='Step4:Runyourcode'></a>Step 4: Run your code
 Click on the *Run* icon in the top-right corner of the code editor to run your code. A terminal window will appear with your output.
 
 NOTE: Try not to confuse the terminal's command prompt with the actual code output. The command prompt will usually have the hostname of your machine and your username.
 
 ![vs_code_editing](images/05A.gif)
 
-## <a name='Step5:CommitandsyncyourchangestoGitHub'></a>Step 5: Commit and sync your changes to GitHub
+### <a name='Step5:CommitandsyncyourchangestoGitHub'></a>Step 5: Commit and sync your changes to GitHub
 When you are finished editing your code, you will want to Commit and Sync your changes back to the GitHub repo online. 
 
 - **Commit**: This action records a *snapshot* of your changes. When you commit changes, you are creating a *checkpoint* with a *short message* describing the changes you made.
@@ -106,7 +107,7 @@ To Commit and Sync changes, do the following:
 
 Note that we have yet to deal with other situations including merging and resolving conflicts. More to come.
 
-### <a name='FirstCommitHowtofixtheGitHubconfigurationerror'></a>First Commit? How to fix the GitHub configuration error
+#### <a name='FirstCommitHowtofixtheGitHubconfigurationerror'></a>First Commit? How to fix the GitHub configuration error
 When you try to do your first GitHub commit in Visual Studio Code, you will get a GitHub configuration error like this:
 
 ![error](images/username_error.png)
@@ -136,7 +137,7 @@ Next, try to run the Commit and Sync actions again. You should then be directed 
 
 This setup should only be necessary on your first Commit action.  
 
-## <a name='Step6:VerifyupdateonGitHuboptional'></a>Step 6: Verify update on GitHub (optional)
+### <a name='Step6:VerifyupdateonGitHuboptional'></a>Step 6: Verify update on GitHub (optional)
 Finally, you can check the repository online (i.e. in the cloud) to verify that your latest Commit changes are reflected:
 
 ![commit_changes](images/repo_commit.png)
@@ -221,45 +222,36 @@ When working with branches, you can use a pull request to tell others about the 
 
 <br><br>
 
-## <a name='GitHubVSCodeWorkflow'></a>GitHub + VS Code Workflow
-When working with GitHub in an IDE like VS Code, it is best to follow this structured workflow every session.
+## <a name='Review:YourDailyWorkflow'></a>Review: Your Daily Workflow
+When working with GitHub in an IDE, it is best to follow this structured workflow every session.
 
-### <a name='PulltheLatestChanges'></a>Pull the Latest Changes
+### <a name='Step1.PulltheLatestChanges'></a>Step 1. Pull the Latest Changes
 Before making any edits, pull the latest changes from the remote repository to ensure your local copy is up to date.
 
 In VS Code, use the Source Control panel or run `git pull` in the terminal.
 
-### <a name='MergeConflictsIfAny'></a>Merge Conflicts (If Any)
+### <a name='Step2.MergeConflictsIfAny'></a>Step 2. Merge Conflicts (If Any)
 If there are conflicts between your local changes and the remote repository, resolve them before proceeding.
 
 VS Code provides an interactive merge tool to help with conflict resolution.
 
-### <a name='EditYourCode'></a>Edit Your Code
+### <a name='Step3.EditYourCode'></a>Step 3. Edit Your Code
 Make the necessary updates or additions to your files. Regularly save your work to prevent losing progress.
 
-### <a name='StageChanges'></a>Stage Changes
+### <a name='Step4.StageChanges'></a>Step 4. Stage Changes
 In VS Code, modified files are automatically staged when committing through the UI.
 
 If using the terminal, manually stage specific changes using `git add <filename>` or `git add .` to stage all changes.
 
-### <a name='WriteaClearCommitMessage'></a>Write a Clear Commit Message
+### <a name='Step5.WriteaClearCommitMessage'></a>Step 5. Write a Clear Commit Message
 Describe your changes concisely and meaningfully (e.g., "*Fixed bug in login authentication*" or "*Added new user profile feature*").
 
 Avoid vague messages like "*Updated files*" or "*Fixed stuff*".
 
-### <a name='CommitChanges'></a>Commit Changes
+### <a name='Step6.CommitChanges'></a>Step 6. Commit Changes
 In VS Code, click the commit button in the Source Control panel or use `git commit -m "Your commit message"` in the terminal.
 
 A commit saves your staged changes locally, but they are not yet uploaded to GitHub.
 
-### <a name='PushtoGitHub'></a>Push to GitHub
+### <a name='Step7.PushtoGitHub'></a>Step 7. Push to GitHub
 After committing, push your changes to the remote repository using the push button in VS Code or `git push` in the terminal.
-
-This makes your updates available to teammates and ensures your work is backed up.
-
-### <a name='BestPractices'></a>Best Practices
-* Always pull before starting work to avoid conflicts.
-* Write descriptive commit messages to explain your changes.
-* Commit frequently to track progress and avoid large, confusing commits.
-* Use branches for major features instead of working directly on main.
-* Regularly sync your changes if working with a team.
