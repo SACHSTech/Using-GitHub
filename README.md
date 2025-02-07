@@ -53,14 +53,14 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 
 ## <a name='SetupaNewRepositorywithVisualStudioCode'></a>Setup a New Repository with Visual Studio Code
 
-### <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
+### Step 1: Fork the repository (optional)
 Forking a repository makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
 
 If you're using a repository (or "repo") provided to you from GitHub Classroom, you can **skip this step**.
 
 ![forking](images/01.gif)
 
-### <a name='Step2:CloneyourrepositorytoVisualStudioCode'></a>Step 2: Clone your repository to Visual Studio Code
+### Step 2: Clone your repository to Visual Studio Code
 Cloning your repo to Visual Studio Code creates a local, offline copy on your machine. To do this, follow these steps:
 
 1. From the GitHub page for the repo, copy the URL for your fork to the clipboard:
@@ -75,19 +75,19 @@ Cloning your repo to Visual Studio Code creates a local, offline copy on your ma
 
 ![vs_code_cloning](images/03.gif)
 
-### <a name='Step3:Edityourcode'></a>Step 3: Edit your code
+### Step 3: Edit your code
 The Explorer sidebar on the left shows all of the files in the current repo. Begin editing your code by opening the appropriate file in the code editor:
 
 ![vs_code_editing](images/04.gif)
 
-### <a name='Step4:Runyourcode'></a>Step 4: Run your code
+### Step 4: Run your code
 Click on the *Run* icon in the top-right corner of the code editor to run your code. A terminal window will appear with your output.
 
 NOTE: Try not to confuse the terminal's command prompt with the actual code output. The command prompt will usually have the hostname of your machine and your username.
 
 ![vs_code_editing](images/05A.gif)
 
-### <a name='Step5:CommitandsyncyourchangestoGitHub'></a>Step 5: Commit and sync your changes to GitHub
+### Step 5: Commit and sync your changes to GitHub
 When you are finished editing your code, you will want to Commit and Sync your changes back to the GitHub repo online. 
 
 - **Commit**: This action records a *snapshot* of your changes. When you commit changes, you are creating a *checkpoint* with a *short message* describing the changes you made.
