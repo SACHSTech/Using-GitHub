@@ -173,14 +173,29 @@ This message is a little more informative about the WIP, useful if there are oth
 <br><br>
 
 ## <a name='TerminologyofGitHub'></a>Terminology of GitHub 
-### <a name='Repositories'></a>Repositories
+### <a name='Repository'></a>Repository
 A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history. You can work within a repository alone or invite others to collaborate with you on those files.
 
 ### <a name='Cloning'></a>Cloning
 When a repository is created with GitHub, it’s stored remotely in the cloud. You can clone a repository to create a local copy on your computer and then use Git to sync the two. 
 
-### <a name='Committingandpushing'></a>Committing and pushing
-Committing and pushing are how you can add the changes you made on your local machine to the remote repository in GitHub. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful commit message to remind yourself or your teammates what work you did (e.g., “Added a README with information about our project”).
+### <a name='Commit'></a>Commit
+A commit in Git is a snapshot of the changes in a repository at a specific point in time. It records modifications along with a **commit message** describing the update. Each commit creates a unique identifier (hash) that allows you to track and revert changes if needed. A commit only affects the local repository until it is pushed to a remote repository like GitHub.
+
+### <a name='Staging'></a>Staging
+Staging is the process of preparing changes for a commit. When you edit files in a repository, they start as untracked or modified but are not yet part of the commit history. Using `git add`, you can stage specific changes, marking them as ready to be included in the next commit.
+
+In Visual Studio Code, when you commit changes through the built-in Git interface, all modified files are automatically staged by default. However, you can manually select which files to stage or unstage in the Source Control panel before committing.
+
+
+### <a name='Push'></a>Push
+A **push** sends committed changes from your local repository to a remote repository. This updates the remote repository with the latest changes from your local machine, making them available to collaborators. 
+
+### <a name='Pull'></a>Pull
+A **pull** fetches and merges changes from a remote repository into your local repository. This ensures that your local branch is up to date with the latest changes made by others. Running `git pull` is equivalent to running `git fetch` (to download changes) followed by `git merge` (to integrate them).
+
+### <a name='Sync'></a>Sync
+In Visual Studio Code, a sync operation performs both a pull and a push in one step.
 
 ### <a name='Branches'></a>Branches
 You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository, `main`. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
@@ -188,8 +203,51 @@ You can use branches on GitHub to isolate work that you do not want merged into 
 ### <a name='Forks'></a>Forks
 A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-### <a name='Pullrequests'></a>Pull requests
+### <a name='Pullrequests'></a>Pull Request
 When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
 
-### <a name='Issues'></a>Issues
-Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. 
+
+<br><br>
+
+## <a name='GitHub + VS Code Workflow'></a>GitHub + VS Code Workflow
+When working with GitHub in an IDE like VS Code, it is best to follow this structured workflow every session.
+
+### Pull the Latest Changes
+Before making any edits, pull the latest changes from the remote repository to ensure your local copy is up to date.
+
+In VS Code, use the Source Control panel or run `git pull` in the terminal.
+
+### Merge Conflicts (If Any)
+If there are conflicts between your local changes and the remote repository, resolve them before proceeding.
+
+VS Code provides an interactive merge tool to help with conflict resolution.
+
+### Edit Your Code
+Make the necessary updates or additions to your files. Regularly save your work to prevent losing progress.
+
+### Stage Changes
+In VS Code, modified files are automatically staged when committing through the UI.
+
+If using the terminal, manually stage specific changes using `git add <filename>` or `git add .` to stage all changes.
+
+### Write a Clear Commit Message
+Describe your changes concisely and meaningfully (e.g., "*Fixed bug in login authentication*" or "*Added new user profile feature*").
+
+Avoid vague messages like "*Updated files*" or "*Fixed stuff*".
+
+### Commit Changes
+In VS Code, click the commit button in the Source Control panel or use `git commit -m "Your commit message"` in the terminal.
+
+A commit saves your staged changes locally, but they are not yet uploaded to GitHub.
+
+### Push to GitHub
+After committing, push your changes to the remote repository using the push button in VS Code or `git push` in the terminal.
+
+This makes your updates available to teammates and ensures your work is backed up.
+
+### Best Practices
+* Always pull before starting work to avoid conflicts.
+* Write descriptive commit messages to explain your changes.
+* Commit frequently to track progress and avoid large, confusing commits.
+* Use branches for major features instead of working directly on main.
+* Regularly sync your changes if working with a team.
