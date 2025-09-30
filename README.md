@@ -53,10 +53,12 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 
 ## <a name='SetupaNewRepositorywithVisualStudioCode'></a>Setup a New Repository with Visual Studio Code
 
-### <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (optional)
-Forking a repository makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
+### <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (Skip if using GitHub Classroom)
+Forking a repository (or "repo", for short) makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
 
-If you're using a repository (or "repo") provided to you from GitHub Classroom, you can **skip this step**.
+**If you're using a repo provided to you from GitHub Classroom, you can skip this step**. 
+
+Accepting an assignment on GitHub Classroom automatically creates your own private repo, so there is no need to make another copy.
 
 ![forking](images/01.gif)
 
@@ -95,6 +97,12 @@ When you are finished editing your code, you will want to Commit and Sync your c
 - **Pull**: This action downloads any new changes from the remote repository since the last sync or clone. New changes are merged with your local repository, warning you of any conflicts.
 - **Sync**: This action is combination of all of the above. A *Sync* action will commit and push local changes to the remote repo, as well as pull any new changes from the remote repository.
 
+> **Quick Analogy**  
+> - **Commit** = Save a checkpoint locally (like saving in a video game).  
+> - **Push** = Send your checkpoint to the cloud (GitHub).  
+> - **Pull** = Bring down the latest checkpoints from the cloud.  
+> - **Sync** = Do both Push and Pull in one step.  
+
 To Commit and Sync changes, do the following:
 
 1. In the sidebar, click on the **Source Control** view.
@@ -125,7 +133,7 @@ git config --global user.email 'your_github_account_email'
 For example, my personal setup would look like:
 
 ```shell
-git config --global user.name 'davecheng-ste'
+git config --global user.name 'davecheng-tech'
 git config --global user.email 'dave.cheng@ycdsb.ca'
 ```
 
@@ -181,7 +189,8 @@ This message is a little more informative about the WIP, useful if there are oth
     <img src="images/commit_wip.png" alt="commit message" width="400px" />
 </div>
 
-
+#### Bad Example: Vague Commit Message
+Avoid messages like *"update stuff"* or *"fixed code"*. These don’t explain what was changed and won’t help you (or teammates) later.  
 
 <br><br>
 
@@ -210,6 +219,9 @@ A **pull** fetches and merges changes from a remote repository into your local r
 ### <a name='Sync'></a>Sync
 In Visual Studio Code, a sync operation performs both a pull and a push in one step.
 
+> **Note for ICS3U and ICS4U Students:**  
+> Branches, Forks, and Pull Requests are powerful collaboration tools, but you will not usually need them in this course. Feel free to skim below or return later.  
+
 ### <a name='Branches'></a>Branches
 You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository, `main`. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
 
@@ -222,36 +234,24 @@ When working with branches, you can use a pull request to tell others about the 
 
 <br><br>
 
-## <a name='Review:YourDailyWorkflow'></a>Review: Your Daily Workflow
+## <a name='Review:YourDailyWorkflow'></a>Quick Daily Workflow (Cheat Sheet)
 When working with GitHub in an IDE, it is best to follow this structured workflow every session.
 
-### <a name='Step1.PulltheLatestChanges'></a>Step 1. Pull the Latest Changes
-Before making any edits, pull the latest changes from the remote repository to ensure your local copy is up to date.
+### 1. Pull the latest changes from GitHub
+- This ensures your local copy is up to date.  
+- If GitHub has updates, Git may need to **merge** them into your code.  
 
-In VS Code, use the Source Control panel or run `git pull` in the terminal.
+### 2. Resolve Merge Conflicts (if any)  
+- If your edits clash with someone else’s, Visual Studio Code will highlight the conflicts.  
+- Choose which code to keep, then **save** and **commit** the resolution.
 
-### <a name='Step2.MergeConflictsIfAny'></a>Step 2. Merge Conflicts (If Any)
-If there are conflicts between your local changes and the remote repository, resolve them before proceeding.
+### 3. Edit your code in VS Code
+Remember to regularly save your work to prevent losing progress.
 
-VS Code provides an interactive merge tool to help with conflict resolution.
+### 4. Commit with a clear, short message
+But remember, a commit only saves your changes locally. They are not yet uploaded to GitHub.
 
-### <a name='Step3.EditYourCode'></a>Step 3. Edit Your Code
-Make the necessary updates or additions to your files. Regularly save your work to prevent losing progress.
+### 5. Push/Sync your changes back to GitHub
+Push your committed changes back to the cloud.
 
-### <a name='Step4.StageChanges'></a>Step 4. Stage Changes
-In VS Code, modified files are automatically staged when committing through the UI.
-
-If using the terminal, manually stage specific changes using `git add <filename>` or `git add .` to stage all changes.
-
-### <a name='Step5.WriteaClearCommitMessage'></a>Step 5. Write a Clear Commit Message
-Describe your changes concisely and meaningfully (e.g., "*Fixed bug in login authentication*" or "*Added new user profile feature*").
-
-Avoid vague messages like "*Updated files*" or "*Fixed stuff*".
-
-### <a name='Step6.CommitChanges'></a>Step 6. Commit Changes
-In VS Code, click the commit button in the Source Control panel or use `git commit -m "Your commit message"` in the terminal.
-
-A commit saves your staged changes locally, but they are not yet uploaded to GitHub.
-
-### <a name='Step7.PushtoGitHub'></a>Step 7. Push to GitHub
-After committing, push your changes to the remote repository using the push button in VS Code or `git push` in the terminal.
+> Tip: If you always pull first, then edit and commit, merges will be smaller and easier to manage.  
