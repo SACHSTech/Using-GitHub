@@ -13,7 +13,7 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 <!-- vscode-markdown-toc -->
 * [Table of Contents](#TableofContents)
 * [Setup a New Repository with Visual Studio Code](#SetupaNewRepositorywithVisualStudioCode)
-	* [Step 1: Fork the repository (optional)](#Step1:Forktherepositoryoptional)
+	* [Step 1: Fork the repository (Skip if using GitHub Classroom)](#Step1:ForktherepositorySkipifusingGitHubClassroom)
 	* [Step 2: Clone your repository to Visual Studio Code](#Step2:CloneyourrepositorytoVisualStudioCode)
 	* [Step 3: Edit your code](#Step3:Edityourcode)
 	* [Step 4: Run your code](#Step4:Runyourcode)
@@ -23,8 +23,9 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 * [Writing Meaningful Commit Messages](#WritingMeaningfulCommitMessages)
 	* [Examples of Commit Messages](#ExamplesofCommitMessages)
 		* [Example: Completion](#Example:Completion)
-		* [Example: Work in Progress](#Example:WorkinProgress)
+		* [Example: Work in Progress - Lazy](#Example:WorkinProgress-Lazy)
 		* [Example: Work in Progress - Informative](#Example:WorkinProgress-Informative)
+		* [Bad Example: Vague Commit Message](#BadExample:VagueCommitMessage)
 * [Terminology of GitHub](#TerminologyofGitHub)
 	* [Repository](#Repository)
 	* [Cloning](#Cloning)
@@ -36,14 +37,12 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 	* [Branches](#Branches)
 	* [Forks](#Forks)
 	* [Pull Request](#PullRequest)
-* [Review: Your Daily Workflow](#Review:YourDailyWorkflow)
-	* [Step 1. Pull the Latest Changes](#Step1.PulltheLatestChanges)
-	* [Step 2. Merge Conflicts (If Any)](#Step2.MergeConflictsIfAny)
-	* [Step 3. Edit Your Code](#Step3.EditYourCode)
-	* [Step 4. Stage Changes](#Step4.StageChanges)
-	* [Step 5. Write a Clear Commit Message](#Step5.WriteaClearCommitMessage)
-	* [Step 6. Commit Changes](#Step6.CommitChanges)
-	* [Step 7. Push to GitHub](#Step7.PushtoGitHub)
+* [Quick Daily Workflow (Cheat Sheet)](#QuickDailyWorkflowCheatSheet)
+	* [1. Pull the latest changes from GitHub](#PullthelatestchangesfromGitHub)
+	* [2. Resolve Merge Conflicts (if any)](#ResolveMergeConflictsifany)
+	* [3. Edit your code in VS Code](#EdityourcodeinVSCode)
+	* [4. Commit with a clear, short message](#Commitwithaclearshortmessage)
+	* [5. Push/Sync your changes back to GitHub](#PushSyncyourchangesbacktoGitHub)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -53,7 +52,7 @@ These are instructions on how to work with GitHub. Before proceeding, make sure 
 
 ## <a name='SetupaNewRepositorywithVisualStudioCode'></a>Setup a New Repository with Visual Studio Code
 
-### <a name='Step1:Forktherepositoryoptional'></a>Step 1: Fork the repository (Skip if using GitHub Classroom)
+### <a name='Step1:ForktherepositorySkipifusingGitHubClassroom'></a>Step 1: Fork the repository (Skip if using GitHub Classroom)
 Forking a repository (or "repo", for short) makes your own copy of it. Your forked repo will be stored in your own personal GitHub account.
 
 **If you're using a repo provided to you from GitHub Classroom, you can skip this step**. 
@@ -175,7 +174,7 @@ This message would indicate the program is finished and ready for general use, m
     <img src="images/commit_finished.png" alt="commit message" width="400px" />
 </div>
 
-#### <a name='Example:WorkinProgress'></a>Example: Work in Progress - Lazy
+#### <a name='Example:WorkinProgress-Lazy'></a>Example: Work in Progress - Lazy
 If you are the only one working on the repo, it may suffice just to remind yourself (and me) that the code is a *work in progress* (or "*WIP*", for short) and not yet ready for review:
 
 <div style="text-align:center">
@@ -189,7 +188,7 @@ This message is a little more informative about the WIP, useful if there are oth
     <img src="images/commit_wip.png" alt="commit message" width="400px" />
 </div>
 
-#### Bad Example: Vague Commit Message
+#### <a name='BadExample:VagueCommitMessage'></a>Bad Example: Vague Commit Message
 Avoid messages like *"update stuff"* or *"fixed code"*. These don’t explain what was changed and won’t help you (or teammates) later.  
 
 <br><br>
@@ -234,24 +233,24 @@ When working with branches, you can use a pull request to tell others about the 
 
 <br><br>
 
-## <a name='Review:YourDailyWorkflow'></a>Quick Daily Workflow (Cheat Sheet)
+## <a name='QuickDailyWorkflowCheatSheet'></a>Quick Daily Workflow (Cheat Sheet)
 When working with GitHub in an IDE, it is best to follow this structured workflow every session.
 
-### 1. Pull the latest changes from GitHub
+### <a name='PullthelatestchangesfromGitHub'></a>1. Pull the latest changes from GitHub
 - This ensures your local copy is up to date.  
 - If GitHub has updates, Git may need to **merge** them into your code.  
 
-### 2. Resolve Merge Conflicts (if any)  
+### <a name='ResolveMergeConflictsifany'></a>2. Resolve Merge Conflicts (if any)  
 - If your edits clash with someone else’s, Visual Studio Code will highlight the conflicts.  
 - Choose which code to keep, then **save** and **commit** the resolution.
 
-### 3. Edit your code in VS Code
+### <a name='EdityourcodeinVSCode'></a>3. Edit your code in VS Code
 Remember to regularly save your work to prevent losing progress.
 
-### 4. Commit with a clear, short message
+### <a name='Commitwithaclearshortmessage'></a>4. Commit with a clear, short message
 But remember, a commit only saves your changes locally. They are not yet uploaded to GitHub.
 
-### 5. Push/Sync your changes back to GitHub
+### <a name='PushSyncyourchangesbacktoGitHub'></a>5. Push/Sync your changes back to GitHub
 Push your committed changes back to the cloud.
 
 > Tip: If you always pull first, then edit and commit, merges will be smaller and easier to manage.  
