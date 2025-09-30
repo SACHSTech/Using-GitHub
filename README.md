@@ -175,7 +175,7 @@ This message would indicate the program is finished and ready for general use, m
     <img src="images/commit_finished.png" alt="commit message" width="400px" />
 </div>
 
-#### <a name='Example:WorkinProgress'></a>Example: Work in Progress
+#### <a name='Example:WorkinProgress'></a>Example: Work in Progress - Lazy
 If you are the only one working on the repo, it may suffice just to remind yourself (and me) that the code is a *work in progress* (or "*WIP*", for short) and not yet ready for review:
 
 <div style="text-align:center">
