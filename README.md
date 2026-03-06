@@ -72,6 +72,9 @@ Cloning your repo to VSCodium creates a local, offline copy on your machine. To 
 
 2. Next, open VSCodium. Go to **File** > **New Window** in the menu bar.
 3. In the new VSCodium window, click on **Clone Repository**.
+
+> IMPORTANT: If this is your **first time** using VSCodium and Git on this computer, you need to do an additional step before proceeding. Click on **Clone Repository** above and choose **Clone from GitHub**. VSCodium will prompt you to authenticate your GitHub account using a web browser and a security code. Do this before proceeding.
+
 4. Paste the URL from the clipboard into the prompt and press return.
 5. You'll be asked where you want to save this cloned folder. (I'd suggest staying organized by putting in your Documents folder, or a specific folder for this class.)
 6. Open your cloned repository.
