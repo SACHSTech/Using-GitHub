@@ -1,6 +1,6 @@
 # Using GitHub
 
-This is a guide on how to work with GitHub. In particular, we'll look at how to work with a GitHub repository on your local machine, and keep everything in sync.
+This is a guide on how to work with GitHub repositories (or "repos"). In particular, we'll look at how to clone a remote repo to your local machine, make changes, and keep everything in sync.
 
 Before proceeding, make sure that you have the following installed (see the *Installation Check* section below):
 
