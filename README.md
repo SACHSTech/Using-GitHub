@@ -149,7 +149,7 @@ For example, my personal setup would look like:
 
 ```shell
 git config --global user.name 'davecheng-tech'
-git config --global user.email 'dave.cheng@ycdsb.ca'
+git config --global user.email 'dave.cheng@ycdsbk12.ca'
 ```
 
 And entered into the terminal, it looks like:
