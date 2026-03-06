@@ -24,50 +24,46 @@ Download and install Git from https://git-scm.com/book/en/v2/Getting-Started-Ins
 ### Java Development Kit (JDK)
 Download the JDK from https://www.oracle.com/java/technologies/downloads/#java21. Choose the version appropriate for your operating system and processor architecture.
 
-## <a name='TableofContents'></a>Table of Contents
+## Table of Contents
 
-<!-- vscode-markdown-toc -->
-* [Table of Contents](#TableofContents)
-* [Setup a New Repository with VSCodium](#SetupaNewRepositorywithVSCodium)
-	* [Step 1: Clone your repository to VSCodium](#Step1:CloneyourrepositorytoVSCodium)
-	* [Step 2: Edit your code](#Step2:Edityourcode)
-	* [Step 3: Run your code](#Step3:Runyourcode)
-	* [Step 4: Commit and sync your changes to GitHub](#Step4:CommitandsyncyourchangestoGitHub)
-		* [First Commit? How to fix the GitHub configuration error](#FirstCommitHowtofixtheGitHubconfigurationerror)
-	* [Step 5: Verify update on GitHub (optional)](#Step5:VerifyupdateonGitHuboptional)
-* [Writing Meaningful Commit Messages](#WritingMeaningfulCommitMessages)
-	* [Examples of Commit Messages](#ExamplesofCommitMessages)
-		* [Example: Completion](#Example:Completion)
-		* [Example: Work in Progress - Lazy](#Example:WorkinProgress-Lazy)
-		* [Example: Work in Progress - Informative](#Example:WorkinProgress-Informative)
-		* [Bad Example: Vague Commit Message](#BadExample:VagueCommitMessage)
-* [Terminology of GitHub](#TerminologyofGitHub)
-	* [Repository](#Repository)
-	* [Cloning](#Cloning)
-	* [Commit](#Commit)
-	* [Staging](#Staging)
-	* [Push](#Push)
-	* [Pull](#Pull)
-	* [Sync](#Sync)
-	* [Branches](#Branches)
-	* [Forks](#Forks)
-	* [Pull Request](#PullRequest)
-* [Quick Daily Workflow (Cheat Sheet)](#QuickDailyWorkflowCheatSheet)
-	* [1. Pull the latest changes from GitHub](#PullthelatestchangesfromGitHub)
-	* [2. Resolve Merge Conflicts (if any)](#ResolveMergeConflictsifany)
-	* [3. Edit your code in VSCodium](#EdityourcodeinVSCodium)
-	* [4. Commit with a clear, short message](#Commitwithaclearshortmessage)
-	* [5. Push/Sync your changes back to GitHub](#PushSyncyourchangesbacktoGitHub)
+- [Installation Check](#installation-check)
+  - [VSCodium](#vscodium)
+  - [Git](#git)
+  - [Java Development Kit (JDK)](#java-development-kit-jdk)
+- [Setup a New Repository with VSCodium](#setup-a-new-repository-with-vscodium)
+  - [Step 1: Clone your repository to VSCodium](#step-1-clone-your-repository-to-vscodium)
+  - [Step 2: Edit your code](#step-2-edit-your-code)
+  - [Step 3: Run your code](#step-3-run-your-code)
+  - [Step 4: Commit and sync your changes to GitHub](#step-4-commit-and-sync-your-changes-to-github)
+    - [First Commit? How to fix the GitHub configuration error](#first-commit-how-to-fix-the-github-configuration-error)
+  - [Step 5: Verify update on GitHub (optional)](#step-5-verify-update-on-github-optional)
+- [Writing Meaningful Commit Messages](#writing-meaningful-commit-messages)
+  - [Examples of Commit Messages](#examples-of-commit-messages)
+    - [Example: Completion](#example-completion)
+    - [Example: Work in Progress - Lazy](#example-work-in-progress---lazy)
+    - [Example: Work in Progress - Informative](#example-work-in-progress---informative)
+    - [Bad Example: Vague Commit Message](#bad-example-vague-commit-message)
+- [Terminology of GitHub](#terminology-of-github)
+  - [Repository](#repository)
+  - [Cloning](#cloning)
+  - [Commit](#commit)
+  - [Staging](#staging)
+  - [Push](#push)
+  - [Pull](#pull)
+  - [Sync](#sync)
+  - [Branches](#branches)
+  - [Forks](#forks)
+  - [Pull Request](#pull-request)
+- [Quick Daily Workflow (Cheat Sheet)](#quick-daily-workflow-cheat-sheet)
+  - [1. Pull the latest changes from GitHub](#1-pull-the-latest-changes-from-github)
+  - [2. Resolve Merge Conflicts (if any)](#2-resolve-merge-conflicts-if-any)
+  - [3. Edit your code in VSCodium](#3-edit-your-code-in-vscodium)
+  - [4. Commit with a clear, short message](#4-commit-with-a-clear-short-message)
+  - [5. Push/Sync your changes back to GitHub](#5-pushsync-your-changes-back-to-github)
 
-<!-- vscode-markdown-toc-config
-	numbering=false
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
+## Setup a New Repository with VSCodium
 
-## <a name='SetupaNewRepositorywithVSCodium'></a>Setup a New Repository with VSCodium
-
-### <a name='Step1:CloneyourrepositorytoVSCodium'></a>Step 1: Clone your repository to VSCodium
+### Step 1: Clone your repository to VSCodium
 Cloning your repo to VSCodium creates a local, offline copy on your machine. To do this, follow these steps:
 
 1. From the GitHub page for the repo, click the green **Code** button and copy the HTTPS URL to the clipboard:
@@ -82,19 +78,19 @@ Cloning your repo to VSCodium creates a local, offline copy on your machine. To 
 
 ![vs_code_cloning](images/01b_clone_vscodium.jpg)
 
-### <a name='Step2:Edityourcode'></a>Step 2: Edit your code
+### Step 2: Edit your code
 The Explorer sidebar on the left shows all of the files in the current repo. Begin editing your code by opening the appropriate file in the code editor:
 
 ![vs_code_editing](images/02_edit_code.jpg)
 
-### <a name='Step3:Runyourcode'></a>Step 3: Run your code
+### Step 3: Run your code
 Click on the *Run* icon in the top-right corner of the code editor to run your code. A terminal window will appear with your output.
 
 NOTE: Try not to confuse the terminal's command prompt with the actual code output. The command prompt will usually have the hostname of your machine and your username.
 
 ![run_code](images/03_run_code.jpg)
 
-### <a name='Step4:CommitandsyncyourchangestoGitHub'></a>Step 4: Commit and sync your changes to GitHub
+### Step 4: Commit and sync your changes to GitHub
 When you are finished editing your code, you will want to Commit and Sync your changes back to the GitHub repo online.
 
 - **Commit**: This action records a *snapshot* of your changes. When you commit changes, you are creating a *checkpoint* with a *short message* describing the changes you made.
@@ -127,7 +123,7 @@ The first time you sync, you will see a dialog confirming that Sync = Push + Pul
 
 Note that we have yet to deal with other situations including merging and resolving conflicts. More to come.
 
-#### <a name='FirstCommitHowtofixtheGitHubconfigurationerror'></a>First Commit? How to fix the GitHub configuration error
+#### First Commit? How to fix the GitHub configuration error
 When you try to do your first GitHub commit in VSCodium, you will get a GitHub configuration error like this:
 
 ![error](images/04d_git_username_warning.png)
@@ -157,7 +153,7 @@ Next, try to run the Commit and Sync actions again. You should then be directed 
 
 This setup should only be necessary on your first Commit action.
 
-### <a name='Step5:VerifyupdateonGitHuboptional'></a>Step 5: Verify update on GitHub (optional)
+### Step 5: Verify update on GitHub (optional)
 Finally, you can check the repository online (i.e. in the cloud) to verify that your latest Commit changes are reflected:
 
 ![commit_changes](images/05_commit_history.jpg)
@@ -165,7 +161,7 @@ Finally, you can check the repository online (i.e. in the cloud) to verify that 
 
 <br><br>
 
-## <a name='WritingMeaningfulCommitMessages'></a>Writing Meaningful Commit Messages
+## Writing Meaningful Commit Messages
 
 Commit messages are a way to communicate changes made to the codebase. They should be clear and informative to help others (including your future self) understand what was done.
 
@@ -179,29 +175,29 @@ Commit messages are a way to communicate changes made to the codebase. They shou
 
 **Include Details for Revisions/Changes** If you need to make revisions or changes based on feedback, you should mention it in the commit message along with what changes were made. For example, "*Revised function logic based on feedback*" or "*Updated variable names for clarity*".
 
-### <a name='ExamplesofCommitMessages'></a>Examples of Commit Messages
-#### <a name='Example:Completion'></a>Example: Completion
+### Examples of Commit Messages
+#### Example: Completion
 This message would indicate the program is finished and ready for general use, marking, or feedback:
 
 ```
 Completed user login feature with input validation
 ```
 
-#### <a name='Example:WorkinProgress-Lazy'></a>Example: Work in Progress - Lazy
+#### Example: Work in Progress - Lazy
 If you are the only one working on the repo, it may suffice just to remind yourself (and me) that the code is a *work in progress* (or "*WIP*", for short) and not yet ready for review:
 
 ```
 WIP
 ```
 
-#### <a name='Example:WorkinProgress-Informative'></a>Example: Work in Progress - Informative
+#### Example: Work in Progress - Informative
 This message is a little more informative about the WIP, useful if there are others working on the same codebase:
 
 ```
 WIP: Adding input validation for user age field
 ```
 
-#### <a name='BadExample:VagueCommitMessage'></a>Bad Example: Vague Commit Message
+#### Bad Example: Vague Commit Message
 Avoid messages like these — they don't explain what was changed and won't help you (or teammates) later.
 
 ```
@@ -212,64 +208,64 @@ done
 
 <br><br>
 
-## <a name='TerminologyofGitHub'></a>Terminology of GitHub
-### <a name='Repository'></a>Repository
+## Terminology of GitHub
+### Repository
 A repository is where your project work happens. Think of it as your project folder. It contains all of your project's files and revision history. You can work within a repository alone or invite others to collaborate with you on those files.
 
-### <a name='Cloning'></a>Cloning
+### Cloning
 When a repository is created with GitHub, it's stored remotely in the cloud. You can clone a repository to create a local copy on your computer and then use Git to sync the two.
 
-### <a name='Commit'></a>Commit
+### Commit
 A commit in Git is a snapshot of the changes in a repository at a specific point in time. It records modifications along with a **commit message** describing the update. Each commit creates a unique identifier (hash) that allows you to track and revert changes if needed. A commit only affects the local repository until it is pushed to a remote repository like GitHub.
 
-### <a name='Staging'></a>Staging
+### Staging
 Staging is the process of preparing changes for a commit. When you edit files in a repository, they start as untracked or modified but are not yet part of the commit history. Using `git add`, you can stage specific changes, marking them as ready to be included in the next commit.
 
 In VSCodium, when you commit changes through the built-in Git interface, all modified files are automatically staged by default. However, you can manually select which files to stage or unstage in the Source Control panel before committing.
 
 
-### <a name='Push'></a>Push
+### Push
 A **push** sends committed changes from your local repository to a remote repository. This updates the remote repository with the latest changes from your local machine, making them available to collaborators.
 
-### <a name='Pull'></a>Pull
+### Pull
 A **pull** fetches and merges changes from a remote repository into your local repository. This ensures that your local branch is up to date with the latest changes made by others. Running `git pull` is equivalent to running `git fetch` (to download changes) followed by `git merge` (to integrate them).
 
-### <a name='Sync'></a>Sync
+### Sync
 In VSCodium, a sync operation performs both a pull and a push in one step.
 
 > **Note for ICS3U and ICS4U Students:**
 > Branches, Forks, and Pull Requests are powerful collaboration tools, but you will not usually need them in this course. Feel free to skim below or return later.
 
-### <a name='Branches'></a>Branches
+### Branches
 You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository, `main`. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
 
-### <a name='Forks'></a>Forks
+### Forks
 A fork is another way to copy a repository, but is usually used when you want to contribute to someone else's project. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-### <a name='PullRequest'></a>Pull Request
+### Pull Request
 When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
 
 
 <br><br>
 
-## <a name='QuickDailyWorkflowCheatSheet'></a>Quick Daily Workflow (Cheat Sheet)
+## Quick Daily Workflow (Cheat Sheet)
 When working with GitHub in an IDE, it is best to follow this structured workflow every session.
 
-### <a name='PullthelatestchangesfromGitHub'></a>1. Pull the latest changes from GitHub
+### 1. Pull the latest changes from GitHub
 - This ensures your local copy is up to date.
 - If GitHub has updates, Git may need to **merge** them into your code.
 
-### <a name='ResolveMergeConflictsifany'></a>2. Resolve Merge Conflicts (if any)
+### 2. Resolve Merge Conflicts (if any)
 - If your edits clash with someone else's, VSCodium will highlight the conflicts.
 - Choose which code to keep, then **save** and **commit** the resolution.
 
-### <a name='EdityourcodeinVSCodium'></a>3. Edit your code in VSCodium
+### 3. Edit your code in VSCodium
 Remember to regularly save your work to prevent losing progress.
 
-### <a name='Commitwithaclearshortmessage'></a>4. Commit with a clear, short message
+### 4. Commit with a clear, short message
 But remember, a commit only saves your changes locally. They are not yet uploaded to GitHub.
 
-### <a name='PushSyncyourchangesbacktoGitHub'></a>5. Push/Sync your changes back to GitHub
+### 5. Push/Sync your changes back to GitHub
 Push your committed changes back to the cloud.
 
 > Tip: If you always pull first, then edit and commit, merges will be smaller and easier to manage.
