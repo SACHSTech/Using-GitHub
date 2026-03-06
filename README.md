@@ -1,8 +1,8 @@
 # Using GitHub
 
-Git is a distributed Version Control System (VCS), which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you've worked on and can easily revert back to an older version if need be. It also makes working with others easier. Groups of people can work together on the same project and merge their changes into one final source.
+This is a guide on how to work with GitHub. In particular, we'll look at how to work with a GitHub repository on your local machine, and keep everything in sync.
 
-These are instructions on how to work with GitHub. Before proceeding, make sure that you have the following installed (see the Installation Check section below):
+Before proceeding, make sure that you have the following installed (see the *Installation Check* section below):
 
 - VSCodium
 - Git
@@ -73,7 +73,7 @@ Cloning your repo to VSCodium creates a local, offline copy on your machine. To 
 2. Next, open VSCodium. Go to **File** > **New Window** in the menu bar.
 3. In the new VSCodium window, click on **Clone Repository**.
 4. Paste the URL from the clipboard into the prompt and press return.
-5. You'll be asked where you want to save this cloned folder. (In the example below, I've chosen my *Documents* folder.)
+5. You'll be asked where you want to save this cloned folder. (I'd suggest staying organized by putting in your Documents folder, or a specific folder for this class.)
 6. Open your cloned repository.
 
 ![vs_code_cloning](images/01b_clone_vscodium.jpg)
@@ -84,11 +84,15 @@ The Explorer sidebar on the left shows all of the files in the current repo. Beg
 ![vs_code_editing](images/02_edit_code.jpg)
 
 ### Step 3: Run your code
-Click on the *Run* icon in the top-right corner of the code editor to run your code. A terminal window will appear with your output.
+Run your code by clicking on **Terminal** > **Run Build Task** in the menu bar.
+
+For Processing graphics, a new graphics window will appear. Any console output (e.g., `System.out.println()` commands or errors) will show up in the VSCodium terminal.
 
 NOTE: Try not to confuse the terminal's command prompt with the actual code output. The command prompt will usually have the hostname of your machine and your username.
 
 ![run_code](images/03_run_code.jpg)
+
+PRO TIP: Work quickly by using the keyboard shortcut for Run Build Task, **Command**+**Shift**+**B** (macOS) or **Control**+**Shift**+**B** (Windows).
 
 ### Step 4: Commit and sync your changes to GitHub
 When you are finished editing your code, you will want to Commit and Sync your changes back to the GitHub repo online.
@@ -96,7 +100,7 @@ When you are finished editing your code, you will want to Commit and Sync your c
 - **Commit**: This action records a *snapshot* of your changes. When you commit changes, you are creating a *checkpoint* with a *short message* describing the changes you made.
 - **Push**: This action uploads the committed changes from your local repository to the remote repository on GitHub.
 - **Pull**: This action downloads any new changes from the remote repository since the last sync or clone. New changes are merged with your local repository, warning you of any conflicts.
-- **Sync**: This action is combination of all of the above. A *Sync* action will commit and push local changes to the remote repo, as well as pull any new changes from the remote repository.
+- **Sync**: This action is a combination of Push and Pull. A *Sync* action pushes your committed local changes to the remote repo, and pulls any new changes from the remote repository.
 
 > **Quick Analogy**
 > - **Commit** = Save a checkpoint locally (like saving in a video game).
@@ -108,7 +112,7 @@ To Commit and Sync changes, do the following:
 
 1. In the sidebar, click on the **Source Control** view.
 2. You should see a list of **Changes** that will be a part of this Commit action. Think of it as a *snapshot of changes*.
-3. Type a short message in the **Message** box, describing the changes made. *IMPORTANT: YOU **MUST** TYPE A COMMIT MESSAGE!*
+3. Type a short message in the **Message** box, describing the changes made. *IMPORTANT: DO NOT LEAVE THIS BLANK!*
 4. Click on **Commit** to record the snapshot.
 
 ![commit](images/04a_commit.jpg)
@@ -117,11 +121,11 @@ To Commit and Sync changes, do the following:
 
 ![sync](images/04b_sync.jpg)
 
-The first time you sync, you will see a dialog confirming that Sync = Push + Pull. Click **OK, Don't Show Again**.
+The first time you sync, you may see a dialog confirming the sync action is a combined push and pull. Click **OK, Don't Show Again**.
 
 ![sync_warning](images/04c_sync_warning.jpg)
 
-Note that we have yet to deal with other situations including merging and resolving conflicts. More to come.
+Note that we have yet to deal with other situations including merging and resolving conflicts. If you run into these issues, come see me in class.
 
 #### First Commit? How to fix the GitHub configuration error
 When you try to do your first GitHub commit in VSCodium, you will get a GitHub configuration error like this:
@@ -149,7 +153,7 @@ And entered into the terminal, it looks like:
 
 ![config](images/04e_terminal.jpg)
 
-Next, try to run the Commit and Sync actions again. You should then be directed to a web browser to authenticate your GitHub username and password for VSCodium.
+Next, try to run the Commit and Sync actions again. You should then be directed to a web browser to authenticate your GitHub account.
 
 This setup should only be necessary on your first Commit action.
 
@@ -167,20 +171,20 @@ Commit messages are a way to communicate changes made to the codebase. They shou
 
 **Start with a Brief Summary.** A one-line commit message should be a concise summary of what the commit accomplishes. It should be clear and descriptive, giving an overview of the changes.
 
-**Use Descriptive Language** Use descriptive language in your commit messages. Instead of just saying "done", they should specify what was done. For example, "*Implemented a function to calculate factorial*" or "*Fixed a bug in the loop condition*".
+**Use Descriptive Language** Use descriptive language in your commit messages. Instead of just saying "done", they should specify what was done. For example, "*Implement a function to calculate factorial*" or "*Fix a bug in the loop condition*".
 
-**Indicate Work in Progress (WIP)** If you're still working on a feature or a fix, use "WIP" in the commit message. For example, "*WIP: Adding input validation for user age*".
+**Indicate Work in Progress (WIP)** If you're still working on a feature or a fix, use "WIP" in the commit message. For example, "*WIP - Add input validation for user age*".
 
-**Indicate Completion** When you finish working something, clearly indicate it in the commit message. You can use phrases like "*Completed*", "*Finished*", or "*Implemented fully*". For example, "*Completed user authentication feature*".
+**Indicate Completion** When you finish working something, clearly indicate it in the commit message. You can use phrases like "*Complete*" or "*Finish*". For example, "*Complete user authentication feature*".
 
-**Include Details for Revisions/Changes** If you need to make revisions or changes based on feedback, you should mention it in the commit message along with what changes were made. For example, "*Revised function logic based on feedback*" or "*Updated variable names for clarity*".
+**Include Details for Revisions/Changes** If you need to make revisions or changes based on feedback, you should mention it in the commit message along with what changes were made. For example, "*Revise function logic based on feedback*" or "*Update variable names for clarity*".
 
 ### Examples of Commit Messages
 #### Example: Completion
 This message would indicate the program is finished and ready for general use, marking, or feedback:
 
 ```
-Completed user login feature with input validation
+Complete user login feature with input validation
 ```
 
 #### Example: Work in Progress - Lazy
@@ -194,7 +198,7 @@ WIP
 This message is a little more informative about the WIP, useful if there are others working on the same codebase:
 
 ```
-WIP: Adding input validation for user age field
+WIP - Add input validation for user age field
 ```
 
 #### Bad Example: Vague Commit Message
@@ -202,7 +206,7 @@ Avoid messages like these — they don't explain what was changed and won't help
 
 ```
 update stuff
-fixed code
+fix code
 done
 ```
 
